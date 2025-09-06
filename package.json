@@ -1,0 +1,49 @@
+{
+  "name": "lsp-mcp-server",
+  "version": "1.0.0",
+  "description": "LSP MCP server that provides refactoring tools through LSP integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lsp-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts *.json *.md",
+    "format:check": "prettier --check src/**/*.ts *.json *.md",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "lsp",
+    "mcp",
+    "refactoring",
+    "language-server",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "@types/glob": "^9.0.0",
+    "glob": "^11.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^24.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
