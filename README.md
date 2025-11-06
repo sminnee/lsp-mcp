@@ -2,6 +2,10 @@
 
 An LSP (Language Server Protocol) MCP (Model Context Protocol) server that provides refactoring tools through LSP integration. This server exposes refactoring capabilities as MCP tools that can be used by MCP clients like Claude Code.
 
+<a href="https://glama.ai/mcp/servers/@sminnee/lsp-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@sminnee/lsp-mcp/badge" alt="LSP Server MCP server" />
+</a>
+
 ## Installation
 
 ### From npm (when published)
